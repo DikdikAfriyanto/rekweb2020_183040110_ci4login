@@ -10,8 +10,13 @@
                 <a class="nav-item nav-link" href="/pages/about">About</a>
                 <a class="nav-item nav-link" href="/pages/contact">Contact</a>
                 <a class="nav-item nav-link" href="/komik">Komik</a>
-
+                <a class="nav-item nav-link" href="/orang">Orang</a>
             </div>
+            <?php if (logged_in()) : ?>
+                <a class="nav-item nav-link" href="/logout">Logout</a>
+            <?php else : ?>
+                <a class="nav-item nav-link" href="/login">Login</a>
+            <?php endif; ?>
         </div>
     </div>
 </nav>
